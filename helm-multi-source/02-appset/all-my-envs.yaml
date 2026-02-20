@@ -50,8 +50,8 @@ spec:
 
       sources:
         - repoURL: https://kostis-codefresh.github.io/multi-sources-example
-          path: helm-multi-source/my-chart
-          targetRevision: HEAD
+          chart: my-chart
+          targetRevision: '0.1.0'
           helm:
             valueFiles:
             - $values/helm-multi-source/my-values/common-values.yaml          
